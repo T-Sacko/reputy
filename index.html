@@ -9,48 +9,86 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar">
-        <img src="assets/images/logo.svg" alt="logo">
-        <!-- nav menu -->
-        <div class="menu">
-            <ul>
-                <li class="menu-item">Join Firesides</li>
-                <li class="menu-item">Partner with us</li>
-                <li class="menu-item">team</li>
-                <li class="menu-item">blog</li>
-            </ul>
-            <div class="buttons" style="display: flex; gap: 1rem;">
-                <button class="login">Log in</button><button class="create-acc">Create account</button>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <!-- ?phone images -->
-        <div class="images">
-            <div class="pics">
-            <img class="left-phone" src="assets/images/left-phone.svg" alt="">
-            <img class="right" src="assets/images/right-phone.svg" alt="">
-        </div>
+    <div class="overlay">
+
+        <div class="modal">
+            <img src="assets/images/tick.svg" alt="">
+            <h3>Thanks for signing up !</h3>
+            <h3> magic link has been sent to your email.</h3>
         </div>
 
-        <!-- text section -->
-        <div class="text">
-            <h1>Land the dream <br> job by showing <br> your soft skills <br> credentials</h1>
-            <div class="sign">
-                <h2 class="sg wallet">Create your </h2>
-                <h2 class="sg wallet"> free talent wallet</h2>
-                <!-- form -->
-                <div class="form">
-                    <input class="input" type="text" placeholder="Display name">
-                    <input class="input" type="text" placeholder="Email address">
-                    <button class=" button"><img src="assets/images/icon.svg" alt="">Sign up with email</button>
-                    <p>Already have an account? <strong><u>Log in</u></strong></p>
+    </div>
+    <!-- navbar -->
+    <div class="desktop">
+        <nav class="navbar">
+            <img src="assets/images/logo.svg" alt="logo">
+            <!-- nav menu -->
+            <div class="menu">
+                <ul>
+                    <li class="menu-item">Join Firesides</li>
+                    <li class="menu-item">Partner with us</li>
+                    <li class="menu-item">team</li>
+                    <li class="menu-item">blog</li>
+                </ul>
+                <div class="buttons" style="display: flex; gap: 1rem;">
+                    <button class="login">Log in</button><button class="create-acc">Create account</button>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!-- ?phone images -->
+            <div class="images">
+                <div class="pics">
+                    <img class="left-phone" src="assets/images/left-phone.svg" alt="">
+                    <img class="right" src="assets/images/right-phone.svg" alt="">
                 </div>
             </div>
 
+            <!-- text section -->
+            <div class="text">
+                <h1>Land the dream <br> job by showing <br> your soft skills <br> credentials</h1>
+                <div class="sign">
+                    <h2 class="sg wallet">Create your </h2>
+                    <h2 class="sg wallet"> free talent wallet</h2>
+                    <!-- form -->
+                    <div class="form">
+                        <input class="input" type="text" placeholder="Display name">
+                        <input class="input" type="text" placeholder="Email address">
+                        <button class="modal-btn button"><img src="assets/images/icon.svg" alt="">Sign up with email</button>
+                        <p>Already have an account? <strong><u>Log in</u></strong></p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <div class="mobile">
+        <div class="mo" style="position: relative; display: flex;">
+            <img src="assets/images/Reputy_landing page task (1)/Sign up/Welcome screen/Sign up/Welcome screen/Group.svg"
+                class="mobile-logo-title"
+                style="position: absolute; display:block; left: 50%; top: 50%; transform: translate(-50%,-50%)"></img>
+            <img class="mobile-logo" style=" display: inline-block;width: 100%;"
+                src="assets/images/Reputy_icon/Sign up/Welcome screen/Sign up/Welcome screen/Reputy-1024 1.png" alt="">
         </div>
-    </main>
+        <form>
+
+            <div class="input-container">
+                <input id="display" class="input-m" type="text" placeholder="">
+                <label class="label" for="display">Display Name</label>
+                <img class="x-btn" src="assets/images/x.svg" alt="">
+            </div>
+
+            <div class="input-container">
+                <input id="email" class="input-m" type="text" placeholder="">
+                <label class="label" for="email">Email Address</label>
+                <img class="x-btn" src="assets/images/x.svg" style="width: 16px;" alt="">
+            </div>
+
+            <button class="button-m"><img src="assets/images/button.svg" alt="">Continue with Magic Link</button>
+        </form>
+    </div>
+    <script src="assets/js.js"></script>
+
 </body>
 
 </html>
