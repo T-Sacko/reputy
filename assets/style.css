@@ -137,6 +137,36 @@ main {
   font-family: space grotesk;
 }
 
+.overlay, .modal{
+  display: none;
+}
+
+.overlay-active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(10, 10, 10, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+.modal-active{
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 36px;
+}
 /* mobile section */
 .mobile-logo {
   padding: 2rem 1.5rem 1.5rem 1.5rem;
@@ -252,35 +282,4 @@ li{
 }
 li:hover{
 border-bottom: 1px solid black;
-}
-
-.overlay, .modal{
-  display: none;
-}
-
-.overlay-active{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(10, 10, 10, 0.5);
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* gap: 1rem; */
-}
-
-.modal-active{
-  background-color: white;
-  width: 60%;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.4rem;
-  border-radius: 36px;
 }

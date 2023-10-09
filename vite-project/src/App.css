@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Space+Grotesk:wght@500&display=swap");
+
+/* remove defualt styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+/* html{} */
+
+/* seperate logo and menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem;
+}
+
+/* make children blocks */
+.navbar .menu {
+  display: flex;
+}
+
+/* list items block */
+.navbar .menu ul {
+  margin-right: 6rem;
+  display: flex;
+}
+
+.navbar .menu-item {
+  padding: 1rem;
+  font-family: "space grotesk";
+  font-size: 1.5rem;
+}
+
+.navbar .menu button {
+  font-family: "open sans";
+  font-size: 18px;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
+
+/* style */
+.navbar .create-acc {
+  background-color: black;
+  color: white;
+}
+
+/* make it a row */
+main {
+  width: 100%;
+  display: flex;
+}
+
+/* center phones and push away from right side a little */
+.images {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: 8rem;
+}
+
+.pics {
+  margin-right: 4rem;
+}
+
+/* move right phoen accordingly */
+.right {
+  display: inline-block;
+  margin-left: -9%;
+  position: absolute;
+  margin-top: 2rem;
+}
+.left-phone {
+  display: inline-block;
+}
+
+/* spacing */
+.text {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  width: 50%;
+}
+
+/* spacing and font sizr */
+.text h2 {
+  margin-top: 1.5rem;
+  font-size: 40px;
+}
+
+.text h1 {
+  font-family: space grotesk;
+  font-size: 64px;
+
+  /* text-align: left; */
+}
+
+.sign {
+  margin-left: 1.5rem;
+}
+
+/* spacing n style */
+.sign .input {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.form {
+  max-width: 80%;
+}
+
+.form button {
+  border-radius: 4rem;
+  background-color: black;
+  color: white;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3rem;
+}
+
+.form p {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: sans-serif;
+}
+
+.sg {
+  font-family: space grotesk;
+}
+
+.overlay, .modal{
+  display: none;
+}
+
+.overlay-active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(10, 10, 10, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+.modal-active{
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 36px;
+}
+/* mobile section */
+.mobile-logo {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.mobile-logo-title {
+  font-family: open sans;
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100svh;
+}
+
+.mobile form {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 2px solid #434344;
+  padding: 0.75rem;
+
+
+}
+.input-m {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 1rem;
+  /* padding: 1rem 0.75rem 0 0.75rem; */
+  /* border-width: 4px; */
+  border: none;
+  outline: none;
+
+  outline: none;
+}
+.input-container:focus-within {
+  border-color: #40acc5; /* Highlight the input field when focused */
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.75rem;
+}
+
+.input-m:focus + .label,
+.input-m:not(:placeholder-shown) + .label {
+  top: 10px;
+  font-size: 12px;
+  color: #434344;
+}
+
+.label-active {
+  top: 10px;
+  font-size: 12px;
+  color: #434344;
+}
+
+.input-m:focus + .x-btn {
+  opacity: 1;
+}
+
+.x-btn{
+  opacity: 0;
+  cursor: pointer;
+}
+
+.button-m {
+  height: 3rem;
+  background-color: black;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+button{
+  cursor: pointer;
+}
+
+li{
+  cursor: pointer;
+}
+li:hover{
+border-bottom: 1px solid black;
+}
